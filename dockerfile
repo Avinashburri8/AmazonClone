@@ -1,14 +1,15 @@
 FROM centos:7
-#update and install nginx section
-RUN yum update -y
-RUN yum install -y epel-release
-RUN yum install -y nginx
-RUN yum install -y vim
-#create path and add index.html
+
+# Update and install nginx section
+RUN yum update -y && \
+    yum install -y epel-release && \
+    yum install -y nginx vim
+
+# Create path and add index.html
 WORKDIR /usr/share/nginx/html
 
-RUN rm index.html
-RUN touch index.html
+# Copy app.css into the directory
+COPY app.css .
 
 EXPOSE 80/tcp
 
