@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my-website
+spec:
+  containers:
+    - name: website
+      image: website:latest
+      ports:
+        - containerPort: 80
