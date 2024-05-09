@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: website
-          image: avinashburri8/amazon-clone:latest # Replace with your Docker image from DockerHub or your private registry
+          image: avinashburri8/website:latest # Replace with your Docker image from DockerHub or your private registry
           ports:
             - containerPort: 80
