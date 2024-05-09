@@ -13,7 +13,7 @@ spec:
         app: my-website
     spec:
       containers:
-      - name: my-website
-        image: avinashburri8/amazon-clone:latest  # Replace with your Docker image from DockerHub or your private registry
-        ports:
-        - containerPort: 80
+        - name: website
+          image: avinashburri8/amazon-clone:latest # Replace with your Docker image from DockerHub or your private registry
+          ports:
+            - containerPort: 80
